@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 const Books = ({ result, show, genresResult }) => {
 
-  const books = result.data.allBooks
   const [filter, setFilter] = useState('')
 
   if (!show) {
@@ -16,8 +15,8 @@ const Books = ({ result, show, genresResult }) => {
   const genres = genresResult.data.allGenres
 
   const filteredBooks = filter.length === 0
-    ? books
-    : books.filter(b => b.genres.includes(filter))
+    ? result.data.allBooks
+    : result.data.allBooks.filter(b => b.genres.includes(filter))
 
   return (
     <div>
