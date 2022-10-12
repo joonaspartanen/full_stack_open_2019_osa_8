@@ -11,7 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "apollo-server": "^2.6.9",
+    "apollo-server": "^2.25.4",
     "dotenv": "^8.0.0",
     "graphql": "^14.4.2",
     "jsonwebtoken": "^8.5.1",
